@@ -35,7 +35,6 @@ def save_diary():
     today = datetime.now()
     mytime = today.strftime('%Y-%m-%d-%H-%M-%S')
 
-
     file = request.files['file_give']
     extension = file.filename.split('.')[-1]
     filename = f'static/post-{mytime}.{extension}'
